@@ -1,0 +1,4 @@
+.mastra/
+.env
+node_modules/
+dist/
