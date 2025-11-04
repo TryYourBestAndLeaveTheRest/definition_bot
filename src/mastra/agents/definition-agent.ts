@@ -3,7 +3,7 @@ import { Agent } from "@mastra/core/agent";
 
 export const definitionAgent = new Agent({
   name: "Definition Agent",
-  id:'definition-agent',
+  id:'definition_agent',
   instructions: `
     You are a helpful assistant that provides short, clear definitions of terms.
     When a user asks for a definition, respond with a concise and accurate explanation.
