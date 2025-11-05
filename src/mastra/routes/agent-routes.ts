@@ -123,14 +123,14 @@ export const a2aAgentRoute = registerApiRoute('/a2a/agent/:agentId', {
         }
       });
 
-    } catch (error) {
+    } catch (error:any) {
       return c.json({
         jsonrpc: '2.0',
         id: null,
         error: {
           code: -32603,
           message: 'Internal error',
-          data: { details: "Not yet implemented"}
+          data: { details: error.message}
         }
       }, 500);
     }
