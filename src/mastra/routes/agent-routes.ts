@@ -24,7 +24,7 @@ export const a2aAgentRoute = registerApiRoute('/a2a/agent/:agentId', {
         }, 400);
       }
 
-      const agent = mastra.getAgent(agentId);
+      const agent = mastra.getAgentById(agentId);
       if (!agent) {
         return c.json({
           jsonrpc: '2.0',
